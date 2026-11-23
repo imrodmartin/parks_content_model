@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {}
+name: 'Activity type'
+vid: activity_type
+description: 'The kind of activity a program is. Two levels: broad category, then specific activity.'
+weight: 0
+new_revision: false

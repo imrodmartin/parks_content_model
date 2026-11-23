@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {}
+name: Season
+vid: season
+description: 'The season a program runs in.'
+weight: 0
+new_revision: false

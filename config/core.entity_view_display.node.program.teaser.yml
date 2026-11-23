@@ -1,0 +1,90 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.program.field_activity_type
+    - field.field.node.program.field_age_group
+    - field.field.node.program.field_description
+    - field.field.node.program.field_facility
+    - field.field.node.program.field_image
+    - field.field.node.program.field_season
+    - field.field.node.program.field_session_dates
+    - field.field.node.program.field_summary
+    - node.type.program
+  module:
+    - datetime_range
+    - user
+id: node.program.teaser
+targetEntityType: node
+bundle: program
+mode: teaser
+content:
+  field_activity_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 105
+    region: content
+  field_age_group:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: -25
+    region: content
+  field_facility:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: -27
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {}
+    weight: -30
+    region: content
+  field_season:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: -26
+    region: content
+  field_session_dates:
+    type: daterange_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: medium
+      from_to: both
+      separator: '-'
+    third_party_settings: {}
+    weight: -28
+    region: content
+  field_summary:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {}
+    weight: -29
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: -24
+    region: content
+hidden:
+  field_description: true

@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.facility.field_accessibility
+    - field.field.node.facility.field_address
+    - field.field.node.facility.field_hours
+    - field.field.node.facility.field_image
+    - node.type.facility
+  module:
+    - text
+    - user
+id: node.facility.default
+targetEntityType: node
+bundle: facility
+mode: default
+content:
+  field_accessibility:
+    type: text_default
+    label: above
+    settings: {}
+    third_party_settings: {}
+    weight: 103
+    region: content
+  field_address:
+    type: basic_string
+    label: above
+    settings: {}
+    third_party_settings: {}
+    weight: 101
+    region: content
+  field_hours:
+    type: text_default
+    label: above
+    settings: {}
+    third_party_settings: {}
+    weight: 102
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {}
+    weight: 104
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

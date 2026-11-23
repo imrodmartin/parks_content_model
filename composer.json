@@ -1,0 +1,15 @@
+{
+    "name": "imrodmartin/parks_content_model",
+    "description": "The Parks & Recreation content model (Program, Facility, 3 vocabularies) for the Acquia Drupal 12 Site Building and Layout and Theming courses.",
+    "type": "drupal-recipe",
+    "keywords": ["Drupal", "recipe", "content model", "training"],
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://github.com/imrodmartin/parks_content_model",
+    "support": {
+        "issues": "https://github.com/imrodmartin/parks_content_model/issues",
+        "source": "https://github.com/imrodmartin/parks_content_model"
+    },
+    "require": {
+        "drupal/core": "^12"
+    }
+}

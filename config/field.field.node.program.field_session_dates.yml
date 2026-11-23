@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_dates
+    - node.type.program
+  module:
+    - datetime_range
+id: node.program.field_session_dates
+field_name: field_session_dates
+entity_type: node
+bundle: program
+label: 'Session dates'
+description: 'The first and last session of this program, including start and end times.'
+required: true
+translatable: false
+default_value: {}
+default_value_callback: ''
+settings: {}
+field_type: daterange

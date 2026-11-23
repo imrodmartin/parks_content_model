@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hours
+    - node.type.facility
+  module:
+    - text
+id: node.facility.field_hours
+field_name: field_hours
+entity_type: node
+bundle: facility
+label: Hours
+description: 'Opening hours. Use a list, and note any seasonal differences.'
+required: false
+translatable: false
+default_value: {}
+default_value_callback: ''
+settings:
+  allowed_formats: {}
+field_type: text_long

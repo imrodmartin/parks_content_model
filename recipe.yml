@@ -1,0 +1,26 @@
+name: 'Parks Content Model'
+description: 'The Parks & Recreation content model from the Drupal Site Building course: the Program and Facility content types, their fields, and the Activity type, Age group and Season vocabularies. Adds only what is missing, so it is safe on a site where trainees built the model by hand.'
+type: 'Content type'
+
+recipes:
+  # field_image on Program and Facility references Image media items.
+  - core/recipes/image_media_type
+
+install:
+  - node
+  - text
+  - options
+  - taxonomy
+  - datetime
+  - datetime_range
+  - media
+  - media_library
+  - path
+  - menu_ui
+  - user
+
+config:
+  # strict: false filters the import down to config that doesn't exist yet.
+  # A trainee who built the model correctly in Site Building keeps their own
+  # config untouched. A trainee who is missing a piece gets it from here.
+  strict: false
